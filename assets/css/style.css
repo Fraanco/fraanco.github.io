@@ -174,7 +174,7 @@ h2.small {
 h3 {
   font-size: 22px;
   font-family: "Montserrat", sans-serif;
-  line-height: 32px;
+  line-height: 24px;
   color: #353535;
   font-weight: 500;
 }
@@ -1147,8 +1147,8 @@ textarea {
 
 .highlight {
   background: #FFE4E0;
-  color: #707070;
-  font-weight: 500;
+  color: #353535;
+  font-weight: 400;
 }
 
 /* class white: set font color white */
@@ -3426,7 +3426,7 @@ header nav.navbar.white #search-box .form-input i {
 
 #page-content #projects .projects-items .single-item .item, #page-content #projects .masonry-items .single-item .item, #page-content #projects-filters .projects-items .single-item .item, #page-content #projects-filters .masonry-items .single-item .item, #page-content #masonry-filters .projects-items .single-item .item, #page-content #masonry-filters .masonry-items .single-item .item {
   background-color: white;
-  border-radius: 4px;
+  border-radius: 24px;
   transition: all .4s ease;
   margin: 25px;
 }
@@ -3456,16 +3456,17 @@ header nav.navbar.white #search-box .form-input i {
 }
 
 #page-content #projects .projects-items .single-item .item h3, #page-content #projects .masonry-items .single-item .item h3, #page-content #projects-filters .projects-items .single-item .item h3, #page-content #projects-filters .masonry-items .single-item .item h3, #page-content #masonry-filters .projects-items .single-item .item h3, #page-content #masonry-filters .masonry-items .single-item .item h3 {
-  font-weight: 300;
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
   line-height: 22px;
   color: #353535;
-  font-weight: 300;
   margin-bottom: 8px;
 }
 
 #page-content #projects .projects-items .single-item .item p, #page-content #projects .masonry-items .single-item .item p, #page-content #projects-filters .projects-items .single-item .item p, #page-content #projects-filters .masonry-items .single-item .item p, #page-content #masonry-filters .projects-items .single-item .item p, #page-content #masonry-filters .masonry-items .single-item .item p {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 22px;
   margin-bottom: 0;
 }
 
