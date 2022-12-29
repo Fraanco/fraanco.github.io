@@ -791,7 +791,8 @@ blockquote, q {
   font-weight: 400;
   font-style: italic;
   margin: 50px 0;
-  border-left: 4px solid #FF624B;
+  border-left: 4px solid #FFBDB4;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 480px) {
@@ -3392,14 +3393,14 @@ header nav.navbar.white #search-box .form-input i {
 
 #page-content #projects ul.filters li.is-checked, #page-content #projects-filters ul.filters li.is-checked, #page-content #masonry-filters ul.filters li.is-checked {
   color: #FF624B;
-  font-weight: 800;
-  background-color:#FFE4E0;
+  font-weight: 500;
+  background-color:#FFF5F3;
   border-radius: 8px;
 }
 
 #page-content #projects ul.filters li:hover, #page-content #projects-filters ul.filters li:hover, #page-content #masonry-filters ul.filters li:hover {
   color: #FF624B;
-  background-color: #FFF5F3;
+  background-color: #FFE4E0;
   font-weight: 500;
   border-radius: 8px;
   transition: color .4s ease;
