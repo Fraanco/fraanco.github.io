@@ -1,220 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Franco Simões</title>
-    
-    <!-- CDN Links for Bootstrap and Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
-</head>
-<body>
-    <!-- Loader -->
-    <div id="myloader">
-        <div class="loader">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Main Wrap -->
-    <div id="main-wrap">
-        <!-- Header & Menu -->
-        <header id="header" class="border">
-            <div class="container">
-                <nav class="navbar navbar-default">
-                    <!-- Header Logo -->
-                    <div id="logo">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.webp" class="normal" alt="logo">
-                            <img src="assets/img/logo@2x.webp" class="retina" alt="logo">
-                        </a>
-                    </div>
-                    
-                    <!-- Button for Responsive Menu -->
-                    <div id="menu-responsive-sidemenu">
-                        <div class="menu-button">
-                            <span class="bar bar-1"></span>
-                            <span class="bar bar-2"></span>
-                            <span class="bar bar-3"></span>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Franco Simões</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-theme.min.css">
+
+        <!-- Custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
         
-        <!-- Page Content -->
-        <div id="page-content">
-            <!-- HomePage header -->
-            <div class="container">
-                <div class="row no-margin">
-                    <div class="col-md-12 padding-leftright-null">
-                        <div id="home-header">
-                            <div class="text">
-                                <h1 class="margin-bottom-null"><span class="grey-dark">hey!</span><br>Franco here<span class="color">.</span></h1>
-                                <p class="heading left max full grey-dark">I'm a Creative Director for multidisciplinary tech projects, with experience in <span class="highlight">Interaction Design</span>, <span class="highlight">Project Management</span> and <span class="highlight">Artificial Intelligence</span>.</p>
-                                <br>
-                                <p>Currently Researching Human-Computer Interfaces for AI Systems @ Computer Sciences institute in State University of Campinas (UNICAMP), and designing the Product Communication structure for <a style="font-weight: 400;" href="https://www.linkedin.com/company/beesb2b/mycompany/">BEES (AB-Inbev)</a>.</p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="assets/css/ionicons.min.css">
+        
+        <!-- Flexslider -->
+        <link rel="stylesheet" href="assets/css/flexslider.css">
+        
+        <!-- Owl -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    </head>
+    <body>
+      
+        <!--  Loader  -->
+        <div id="myloader">
+            <div class="loader">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
                 </div>
             </div>
-            
-            <!-- Portfolio -->
-            <div id="home-wrap" class="content-section">
+        </div>
+        <!--  END Loader  -->
+        
+
+        <!--  Main Wrap  -->
+        <div id="main-wrap">
+            <!--  Header & Menu  -->
+            <header id="header" class="border">
                 <div class="container">
-                    <section id="projects" data-isotope="load-simple" class="page padding-top-null padding-onlybottom-lg">
-                        <div class="row no-margin text-left">
-                            <div class="col-sm-12 padding-leftright-null">
-                                <div class="filter-wrap left">
-                                    <ul class="col-md-12 filters uppercase padding-leftright-null">
-                                        <li data-filter="*" class="is-checked">All</li>
-                                        <li data-filter=".uxDesign">Interaction Design</li>
-                                        <li data-filter=".marketing">Marketing</li>
-                                        <li data-filter=".creativeDirection">Creative Direction</li>
-                                        <li data-filter=".research">Research</li>
-                                        <li data-filter=".art">Art</li>
-                                    </ul>
-                                </div>
+                    <nav class="navbar navbar-default">
+                        <!--  Header Logo  -->
+                        <div id="logo">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/img/logo.png" class="normal" alt="logo">
+                                <img src="assets/img/logo@2x.webp" class="retina" alt="logo">
+                            </a>
+                        </div>
+                        <!--  END Header Logo  -->
+                        <!--  Menu  -->
+                        <!--<div id="sidemenu">
+                            <div class="menu-holder">
+                                <ul>
+                                    <li class="submenu">
+                                        <a href="index.html">Work</a>
+                                    </li>
+                                    <li class="submenu">
+                                        <a href="about.html">About me</a>
+                                    </li>
+                                    <li class="submenu">
+                                        <a href="javascript:void(0)">Writing</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Journal Classic</a></li>
+                                            <li><a href="blog-minimal.html">Journal Minimal</a></li>
+                                            <li><a href="single-post.html">Post</a></li>
+                                            <li><a href="single-post-slider.html">Post Slider</a></li>
+                                            <li><a href="single-post-video.html">Post Video</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contacts.html">Contacts</a>
+                                    </li>-->
+                                </ul>
                             </div>
                         </div>
-                        <div class="projects-items equal two-columns">
-                            <!-- PK XD XMas Gifts -->
-                            <div class="single-item one-item uxDesign creativeDirection marketing">
-                                <div class="item">
-                                    <img src="assets/img/project-xmasgifts/xmas-cover.webp" alt="PK XD Gift Season Website" loading="lazy">
-                                    <div class="content">
-                                        <h3>PK XD Gift Season Website</h3>
-                                        <p>Or how we created a new sales point for PK XD's Gem and Coin Packs during Christmas.</p>
-                                    </div>
-                                    <a href="project-XmasGifts.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!-- Vai Pa Onde? -->
-                            <div class="single-item one-item uxDesign creativeDirection">
-                                <div class="item">
-                                    <img src="assets/img/project-vaipaonde/vpo-cover.webp" alt="Vai Pa Onde?" loading="lazy">
-                                    <div class="content">
-                                        <h3>Vai Pa Onde?</h3>
-                                        <p>Or how made it easier for people to find Free Content during the Quarantine.</p>
-                                    </div>
-                                    <a href="project-VaiPaOnde.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!-- Liber Dashboard -->
-                            <div class="single-item one-item research uxDesign creativeDirection">
-                                <div class="item">
-                                    <img src="assets/img/project-dash/dash-cover.webp" alt="Investor's Dashboard" loading="lazy">
-                                    <div class="content">
-                                        <h3>Investor's Dashboard</h3>
-                                        <p>Or how I improved the app's efficiency and reduced the calls to customer support.</p>
-                                    </div>
-                                    <a href="project-dash.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!-- Liber Extrato -->
-                            <div class="single-item one-item research uxDesign creativeDirection">
-                                <div class="item">
-                                    <img src="assets/img/project-statement/statement-cover.webp" alt="Investment Statement" loading="lazy">
-                                    <div class="content">
-                                        <h3>Investment Statement</h3>
-                                        <p>Or how I helped users to have more information about their transactions.</p>
-                                    </div>
-                                    <a href="project-statement.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!-- ImpeachTV -->
-                            <div class="single-item one-item art research uxDesign creativeDirection">
-                                <div class="item">
-                                    <img src="assets/img/impeachTV/ImpeachTV-cover.webp" alt="ImpeachTV" loading="lazy">
-                                    <div class="content">
-                                        <h3>ImpeachTV</h3>
-                                        <p>Or how I used audiovisual metadata and user interaction to provide new interpretations of a political video</p>
-                                    </div>
-                                    <a href="project-impeachtv.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!-- O Muro -->
-                            <div class="single-item one-item research uxDesign creativeDirection">
-                                <div class="item">
-                                    <img src="assets/img/thewall/thewall-cover.webp" alt="The Wall" loading="lazy">
-                                    <div class="content">
-                                        <h3>The Wall</h3>
-                                        <p>Or how I created a digital game that used procedural rhetoric to instigate players to reflect on the complexities of organizing non-linear information into a journalistic narrative.</p>
-                                    </div>
-                                    <a href="project-thewall.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!-- DPA -->
-                            <div class="single-item one-item art creativeDirection">
-                                <div class="item">
-                                    <img src="assets/img/project-dpa/dpa-cover.webp" alt="Deixa a Porta Aberta" loading="lazy">
-                                    <div class="content">
-                                        <h3>Deixa a Porta Aberta</h3>
-                                        <p>Or how I invited LGBTQIA+ individuals to share their coming out stories.</p>
-                                    </div>
-                                    <a href="project-dpa.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!-- Planalto Fighters -->
-                            <div class="single-item one-item art creativeDirection uxDesign">
-                                <div class="item">
-                                    <img src="assets/img/project-planalto/planalto-capa.webp" alt="Planalto Fighters" loading="lazy">
-                                    <div class="content">
-                                        <h3>Planalto Fighters</h3>
-                                        <p>Or how I created a satirical game about fake news in one weekend.</p>
-                                    </div>
-                                    <a href="project-planalto.html" class="link"></a>
-                                </div>
-                            </div>
-                            <!-- QR Codex -->
-                            <div class="single-item one-item art creativeDirection">
-                                <div class="item">
-                                    <img src="assets/img/project-qrcodex/qrcodex.webp" alt="QR Codex" loading="lazy">
-                                    <div class="content">
-                                        <h3>QR Codex</h3>
-                                        <p>Or how I used Artificial Intelligence generative tools to create the encyclopedia of a World that does not exist</p>
-                                    </div>
-                                    <a href="project-qrcodex.html" class="link"></a>
-                                </div>
+                        <!--  END Menu  -->
+                        <!--  Button for Responsive Menu  -->
+                        <div id="menu-responsive-sidemenu">
+                            <div class="menu-button">
+                                <span class="bar bar-1"></span>
+                                <span class="bar bar-2"></span>
+                                <span class="bar bar-3"></span>
                             </div>
                         </div>
-                    </section>
+                        <!--  END Button for Responsive Menu  -->
+                    </nav>
+                </div>
+            </header>
+            <!--  END Header & Menu  -->
+
+            <!--  Page Content  -->
+            <div id="page-content">
+                <!--  HomePage header  -->
+                <div class="container">
+                   <div class="row no-margin">
+                       <div class="col-md-12 padding-leftright-null">
+                           <div id="home-header">
+                               <div class="text">
+                                   <h1 class="margin-bottom-null"><span class="grey-dark">hey!</span><br>Franco here<span class="color">.</span></h1>
+                                   <p class="heading left max full grey-dark">I'm a Creative Director for multidisciplinary tech projects, with experience in <span class="highlight">Interaction Design</span>, <span class="highlight">Project Management</span> and <span class="highlight">Artificial Intelligence</span>.</p>
+                                   <br>
+                                   <p>test Currently Researching Human-Computer Interfaces for AI Systems @ Computer Sciences institute in State University of Campinas (UNICAMP), and designing the Product Communication structure for <a style="font-weight: 400;" href="https://www.linkedin.com/company/beesb2b/mycompany/">BEES (AB-Inbev)</a>.</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <!--  END HomePage header  -->
+                <div id="home-wrap" class="content-section">
+                    <div class="container">
+                        <!--  Portfolio  -->
+                        <section id="projects" data-isotope="load-simple" class="page padding-top-null padding-onlybottom-lg">
+                            <!--  Filters  -->
+                            <div class="row no-margin text-left">
+                                <div class="col-sm-12 padding-leftright-null">
+                                    <div class="filter-wrap left">
+                                        <ul class="col-md-12 filters uppercase padding-leftright-null">
+                                            <li data-filter="*" class="is-checked">All</li>
+                                            <li data-filter=".uxDesign">Interaction Design</li>
+                                            <li data-filter=".marketing">Marketing</li>
+                                            <li data-filter=".creativeDirection">Creative Direction</li>
+                                            <li data-filter=".research">Research</li>
+                                            <li data-filter=".art">Art</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  END Filters  -->
+                            <div class="projects-items equal two-columns">
+                                <!-- PK XD XMas Gifts -->
+                                <div class="single-item one-item uxDesign creativeDirection marketing">
+                                    <div class="item">
+                                        <img src="assets/img/project-xmasgifts/xmas-cover.webp" alt="">
+                                        <div class="content">
+                                            <h3>PK XD Gift Season Website</h3>
+                                            <p>Or how we created a new sales point for PK XD's Gem and Coin Packs during Christmas.</p>
+                                        </div>
+                                        <a href="project-XmasGifts.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END  PK XD XMas Gifts -->
+                                <!-- Vai Pa Onde? -->
+                                <div class="single-item one-item uxDesign creativeDirection">
+                                    <div class="item">
+                                        <img src="assets/img/project-vaipaonde/vpo-cover.webp" alt="">
+                                        <div class="content">
+                                            <h3>Vai Pa Onde?</h3>
+                                            <p>Or how made it easier for people to find Free Content during the Quarantine.</p>
+                                        </div>
+                                        <a href="project-VaiPaOnde.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END Vai Pa Onde? -->
+                                <!-- Liber Dashboard -->
+                                <div class="single-item one-item research uxDesign creativeDirection">
+                                    <div class="item">
+                                        <img src="assets/img/project-dash/dash-cover.webp" alt="">
+                                        <div class="content">
+                                            <h3>Investor's Dashboard</h3>
+                                            <p>Or how I improved the app's efficency and reduced the calls to customer support.</p>
+                                        </div>
+                                        <a href="project-dash.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END Liber Dashboard -->      
+                                <!-- Liber Extrato -->
+                                <div class="single-item one-item research uxDesign creativeDirection">
+                                    <div class="item">
+                                        <img src="assets/img/project-statement/statement-cover.webp" alt="">
+                                        <div class="content">
+                                            <h3>Investment Statement</h3>
+                                            <p>Or how I helped users to have more information about their transactions.</p>
+                                        </div>
+                                        <a href="project-statement.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END Extrato -->
+                                <!-- ImpeachTV -->
+                                <div class="single-item one-item art research uxDesign creativeDirection">
+                                    <div class="item">
+                                        <img src="assets/img/impeachTV/ImpeachTV-cover.webp" alt="">
+                                        <div class="content">
+                                            <h3>ImpeachTV</h3>
+                                            <p>Or how I used audiovisual metadata and user interaction to to provide new interpretations of a political video</p>
+                                        </div>
+                                        <a href="project-impeachtv.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END ImpeachTV-->
+                                <!-- O Muro -->
+                                <div class="single-item one-item research uxDesign creativeDirection">
+                                    <div class="item">
+                                        <img src="assets/img/thewall/thewall-cover.webp" alt="">
+                                        <div class="content">
+                                            <h3>The Wall</h3>
+                                            <p>Or how I created a digital game that used procedural rhetoric to instigate players to reflect on the complexities of organizing non-linear information into a journalistic narrative.</p>
+                                        </div>
+                                        <a href="project-thewall.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END O Muro -->                    
+                                <!-- DPA -->
+                                <div class="single-item one-item art creativeDirection">
+                                    <div class="item">
+                                        <img src="assets/img/project-dpa/dpa-cover.webp" alt="">
+                                        <div class="content">
+                                            <h3>Deixa a Porta Aberta</h3>
+                                            <p>Or how I invited LGBTQIA+ individuals to share their coming out stories.</p>
+                                        </div>
+                                        <a href="project-dpa.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END DPA -->
+                                <!-- Planalto Fighters -->
+                                <div class="single-item one-item art creativeDirection uxDesign">
+                                    <div class="item">
+                                        <img src="assets/img/project-planalto/planalto-capa.webp" alt="">
+                                        <div class="content">
+                                            <h3>Planalto Fighters</h3>
+                                            <p>Or how I created a satirical game about fake news in one weekend.</p>
+                                        </div>
+                                        <a href="project-planalto.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END Planalto Fighters -->
+                                <!-- QR Codex -->
+                                <div class="single-item one-item art creativeDirection">
+                                    <div class="item">
+                                        <img src="assets/img/project-qrcodex/qrcodex.webp" alt="">
+                                        <div class="content">
+                                            <h3>QR Codex</h3>
+                                            <p>Or how I Artificial Intelligence generative tools to create the encyclopedia of a World that does not exist</p>
+                                        </div>
+                                        <a href="project-qrcodex.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END QR Codex -->  
+                            </div>
+                        </section>
+                        <!-- END Portfolio -->                    
+                    </div>
                 </div>
             </div>
+            <!--  END Page Content -->
         </div>
+        <!--  Main Wrap  -->
         
-        <!-- Footer -->
+
+        <!--  Footer  -->
         <footer>
             <div class="container">
                 <div class="row no-margin">
                     <div class="col-md-12 text small">
-                        <ul class="social">
-                            <li><a href="https://www.linkedin.com/in/francosimoes/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.instagram.com/simoesfranco/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="https://francosimoes.medium.com/"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
-                            <li><i class="fa fa-gmail"><p>o.fraanco@gmail.com</p></i></li>
-                        </ul>
+                            <ul class="social">
+                                <li><a href="https://www.linkedin.com/in/francosimoes/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/simoesfranco/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://francosimoes.medium.com/"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+                                <li><i class="fa fa-gmail"><p>o.fraanco@gmail.com</p></i></li>
+                            </ul>  
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
-    
-    <!-- jQuery and Bootstrap from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/main.min.js" defer></script>
-</body>
+        <!--  END Footer. Class fixed for fixed footer  -->
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- All js library -->
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.flexslider-min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/smooth.scroll.min.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/jquery.countTo.js"></script>
+        <script src="assets/js/jquery.scrolly.js"></script>
+        <script src="assets/js/plugins-scroll.js"></script>
+        <script src="assets/js/imagesloaded.min.js"></script>
+        <script src="assets/js/pace.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
