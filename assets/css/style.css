@@ -77,6 +77,21 @@ a:focus {
 /*-------------------------------------------------*/
 /* =  2.General
 /*-------------------------------------------------*/
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0; /* Add margin to the right and bottom */
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.tags {
+    margin-top: 10px; /* Add margin to the top of the tags container */
+    padding-left: 15px; /* Add padding to align with the text */
+}
+
 body {
   font: 100% "Montserrat", sans-serif;
   color: #353535;
