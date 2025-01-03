@@ -88,9 +88,9 @@ a:focus {
 }
 
 .tags {
-  margin-top: 5px; /* Reduce top margin */
-  margin-bottom: 15px; /* Add bottom margin */
-  padding-left: 15px; /* Add padding to align with the text */
+  margin-top: 2px; /* Reduce top margin */
+  margin-bottom: 10px; /* Add bottom margin */
+
 }
 
 body {
