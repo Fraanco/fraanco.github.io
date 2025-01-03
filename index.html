@@ -116,7 +116,7 @@
                            <div id="home-header">
                                <div class="text">
                                    <h1 class="margin-bottom-null"><span class="grey-dark">hey!</span><br>Franco here<span class="color">.</span></h1>
-                                   <p class="heading left max full grey-dark">I'm a Creative Director for multidisciplinary tech projects, with experience in <span class="highlight">Interaction Design</span>, <span class="highlight">Project Management</span> and <span class="highlight">Artificial Intelligence</span>.</p>
+                                   <p class="heading left max full grey-dark">I'm a Designer for multidisciplinary tech projects, with experience in <span class="highlight">Interaction Design</span>, <span class="highlight">Project Management</span> and <span class="highlight">Artificial Intelligence</span>.</p>
                                    <br>
                                    <p>Currently Researching Human-Computer Interfaces for AI Systems @ Computer Sciences institute in State University of Campinas (UNICAMP), and designing the Product Communication structure for <a style="font-weight: 400;" href="https://www.linkedin.com/company/beesb2b/mycompany/">BEES (AB-Inbev)</a>.</p>
                                </div>
@@ -263,6 +263,10 @@
                                             <p>
                                                 Or how I used genAI to visually interpret news articles about the Brazilian government's handling of the COVID-19 pandemic.</p>
                                         </div>
+                                        <div class="tags">
+                                            <span class="tag">art</span>
+                                            <span class="tag">creativeDirection</span>
+                                        </div>
                                         <a href="project-virus-visions.html" class="link"></a>
                                     </div>
                                 </div>
@@ -313,5 +317,37 @@
         <script src="assets/js/imagesloaded.min.js"></script>
         <script src="assets/js/pace.min.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const projectItems = document.querySelectorAll('.single-item.one-item');
+            
+                projectItems.forEach(item => {
+                    const tagsDiv = item.querySelector('.tags');
+                    const classes = item.className.split(' ').filter(cls => cls !== 'single-item' && cls !== 'one-item');
+            
+                    classes.forEach(cls => {
+                        const tag = document.createElement('span');
+                        tag.className = 'tag';
+                        tag.textContent = cls;
+                        tagsDiv.appendChild(tag);
+                    });
+                });
+            });
+            </script>
+            
+            <style>
+            .tag {
+                display: inline-block;
+                background-color: #f0f0f0;
+                color: #333;
+                padding: 5px 10px;
+                margin: 5px;
+                border-radius: 3px;
+                font-size: 12px;
+            }
+            </style>
+
     </body>
 </html>
+
