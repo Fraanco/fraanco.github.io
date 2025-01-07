@@ -81,8 +81,6 @@ a:focus {
   display: inline-block;
   background-color: #f0f0f0;
   color: #333;
-  padding: 5px 10px;
-  margin: 5px 5px 0 0; /* Remove bottom margin */
   border-radius: 3px;
   font-size: 12px;
 }
