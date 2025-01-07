@@ -84,13 +84,14 @@ a:focus {
   margin-left: 0;
   padding-left: 0;
   padding-bottom: 2px;
-  border-radius: 8px;
+  border-radius: 16px;
   font-size: 12px;
 }
 
 .tags {
   margin-top: 2px; /* Reduce top margin */
   margin-bottom: 10px; /* Add bottom margin */
+  padding-bottom: 10px;
 
 }
 
