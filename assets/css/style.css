@@ -96,9 +96,14 @@ a:focus {
 }
 
 .year-tag {
-  background-color: #fec8c0; /* Different background color for year tags */
-  color: #000;
+  background-color: #d3d3d3; /* Different background color for year tags */
   font-weight: bold;
+  display: inline-block;
+  color: #333;
+  padding: 5px 10px;
+  margin: 5px; /* Ajustar a margem para centralização */
+  border-radius: 8px;
+  font-size: 12px;
 }
 
 }
