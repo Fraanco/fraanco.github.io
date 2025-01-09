@@ -81,17 +81,17 @@ a:focus {
   display: inline-block;
   background-color: #f0f0f0;
   color: #333;
-  margin-left: 0px;
-  padding-left: 4px;
-  padding-bottom: 2px;
-  border-radius: 24px;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0; /* Remove bottom margin */
+  border-radius: 3px;
   font-size: 12px;
 }
 
 .tags {
-  margin-top: 2px; /* Reduce top margin */
-  margin-bottom: 10px; /* Add bottom margin */
-  padding-bottom: 10px;
+  margin-top: 5px; /* Reduce top margin */
+  margin-bottom: 15px; /* Add bottom margin */
+  padding-left: 15px; /* Add padding to align with the text */
+}
 
 }
 
