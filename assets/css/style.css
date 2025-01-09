@@ -95,6 +95,12 @@ a:focus {
   margin-bottom: 0px; /* Adicionar margem inferior */
 }
 
+.year-tag {
+  background-color: #d3d3d3; /* Different background color for year tags */
+  color: #000;
+  font-weight: bold;
+}
+
 }
 
 body {
