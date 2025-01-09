@@ -82,15 +82,18 @@ a:focus {
   background-color: #f0f0f0;
   color: #333;
   padding: 5px 10px;
-  margin: 5px 5px 0 0; /* Remove bottom margin */
+  margin: 5px; /* Ajustar a margem para centralização */
   border-radius: 3px;
   font-size: 12px;
 }
 
 .tags {
-  margin-top: 5px; /* Reduce top margin */
-  margin-bottom: 15px; /* Add bottom margin */
-  padding-left: 15px; /* Add padding to align with the text */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza as tags horizontalmente */
+  margin-top: 5px; /* Reduzir a margem superior */
+  margin-bottom: 15px; /* Adicionar margem inferior */
+  padding-left: 15px; /* Adicionar padding para alinhar com o texto */
 }
 
 }
