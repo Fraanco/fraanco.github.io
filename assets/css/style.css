@@ -96,8 +96,7 @@ a:focus {
 }
 
 .year-tag {
-  background-color: #d3d3d3; /* Different background color for year tags */
-  font-weight: bold;
+  background-color: #ffc8c0; /* Different background color for year tags */
   display: inline-block;
   color: #333;
   padding: 5px 10px;
