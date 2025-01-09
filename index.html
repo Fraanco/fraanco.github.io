@@ -151,11 +151,11 @@
                                     <div class="item">
                                         <img src="assets/img/project-xmasgifts/xmas-cover.webp" alt="">
                                         <div class="tags-container">
+                                            <span class="year-tag">2021</span>
                                             <span class="tag">Research</span>
                                             <span class="tag">Creative Direction</span>
                                             <span class="tag">Interaction Design</span>
                                             <span class="tag">Marketing</span>
-                                            <span class="year-tag">2020</span>
                                         </div>
                                         <div class="content">
                                             <h3>PK XD Gift Season Website</h3>
@@ -170,6 +170,7 @@
                                     <div class="item">
                                         <img src="assets/img/project-vaipaonde/vpo-cover.webp" alt="">
                                         <div class="tags-container">
+                                            <span class="year-tag">2020</span>
                                             <span class="tag">Research</span>
                                             <span class="tag">Creative Direction</span>
                                             <span class="tag">Interaction Design</span>
@@ -187,8 +188,8 @@
                                     <div class="item">
                                         <img src="assets/img/project-dash/dash-cover.webp" alt="" >
                                         <div class="tags-container">
+                                            <span class="year-tag">2018</span>
                                             <span class="tag">Research</span>
-                                            <span class="tag">Creative Direction</span>
                                             <span class="tag">Interaction Design</span>
                                         </div>
                                         <div class="content">
@@ -204,8 +205,8 @@
                                     <div class="item">
                                         <img src="assets/img/project-statement/statement-cover.webp" alt="" >
                                         <div class="tags-container">
+                                            <span class="year-tag">2018</span>
                                             <span class="tag">Research</span>
-                                            <span class="tag">Creative Direction</span>
                                             <span class="tag">Interaction Design</span>
                                         </div>
                                         <div class="content">
@@ -220,6 +221,7 @@
                                     <div class="item">
                                         <img src="assets/img/impeachTV/ImpeachTV-cover.webp" alt="" >
                                         <div class="tags-container">
+                                            <span class="year-tag">2016</span>
                                             <span class="tag">Art</span>
                                             <span class="tag">Research</span>
                                             <span class="tag">Creative Direction</span>
@@ -238,6 +240,7 @@
                                     <div class="item">
                                         <img src="assets/img/thewall/thewall-cover.webp" alt="">
                                         <div class="tags-container">
+                                            <span class="year-tag">2016</span>
                                             <span class="tag">Research</span>
                                             <span class="tag">Creative Direction</span>
                                             <span class="tag">Interaction Design</span>
@@ -255,6 +258,7 @@
                                     <div class="item">
                                         <img src="assets/img/project-dpa/dpa-cover.webp" alt="" >
                                         <div class="tags-container">
+                                            <span class="year-tag">2020</span>
                                             <span class="tag">Art</span>
                                             <span class="tag">Creative Direction</span>
                                         </div>
@@ -271,6 +275,7 @@
                                     <div class="item">
                                         <img src="assets/img/project-planalto/planalto-capa.webp" alt="" >
                                         <div class="tags-container">
+                                            <span class="year-tag">2018</span>
                                             <span class="tag">Art</span>
                                             <span class="tag">Creative Direction</span>
                                             <span class="tag">Interaction Design</span>
@@ -288,6 +293,7 @@
                                     <div class="item">
                                         <img src="assets/img/project-qrcodex/qrcodex.webp" alt="" >
                                         <div class="tags-container">
+                                            <span class="year-tag">2022</span>
                                             <span class="tag">Art</span>
                                             <span class="tag">Creative Direction</span>
                                         </div>
@@ -304,6 +310,7 @@
                                     <div class="item">
                                         <img src="assets/img/project-virus-vision/virus-visions-cover.webp" alt="" >
                                         <div class="tags-container">
+                                            <span class="year-tag">2020</span>
                                             <span class="tag">Art</span>
                                             <span class="tag">Creative Direction</span>
                                         </div>
@@ -380,19 +387,23 @@
                     });
                 });
             });
-            </script>
+                    </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const projectsContainer = document.querySelector('.projects-items');
+                const projects = Array.from(projectsContainer.children);
             
-            <style>
-            .tag {
-                display: inline-block;
-                background-color: #f0f0f0;
-                color: #333;
-                padding: 5px 10px;
-                margin: 5px;
-                border-radius: 3px;
-                font-size: 12px;
-            }
-            </style>
+                projects.sort((a, b) => {
+                    const yearA = parseInt(a.getAttribute('data-year'));
+                    const yearB = parseInt(b.getAttribute('data-year'));
+                    return yearB - yearA; // Ordenar em ordem decrescente
+                });
+            
+                projects.forEach(project => projectsContainer.appendChild(project));
+            });
+            </script>
+
 
     </body>
 </html>
