@@ -92,7 +92,7 @@ a:focus {
   justify-content: center; /* Centraliza as tags horizontalmente */
   flex-wrap: wrap; /* Permite que as tags quebrem linha se necessário */
   margin-top: 5px; /* Reduzir a margem superior */
-  margin-bottom: 10px; /* Adicionar margem inferior */
+  margin-bottom: 0px; /* Adicionar margem inferior */
 }
 
 }
