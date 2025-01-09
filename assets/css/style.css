@@ -87,13 +87,12 @@ a:focus {
   font-size: 12px;
 }
 
-.tags {
+.tags-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center; /* Centraliza as tags horizontalmente */
+  flex-wrap: wrap; /* Permite que as tags quebrem linha se necessário */
   margin-top: 5px; /* Reduzir a margem superior */
   margin-bottom: 15px; /* Adicionar margem inferior */
-  padding-left: 15px; /* Adicionar padding para alinhar com o texto */
 }
 
 }
