@@ -96,7 +96,7 @@ a:focus {
 }
 
 .year-tag {
-  background-color: #d3d3d3; /* Different background color for year tags */
+  background-color: #fec8c0; /* Different background color for year tags */
   color: #000;
   font-weight: bold;
 }
