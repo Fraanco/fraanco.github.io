@@ -417,13 +417,13 @@
                 year : '[data-year] parseInt'    /* reads the attribute, converts to number  */
                 },
                 sortBy       : 'year',             /* 4️⃣  default sort = year                */
-                sortAscending: false               /* newest → oldest                         */
+                sortAscending: true               /* newest → oldest                         */
             });
         
             /* 5️⃣  keep the filters working AND keep the sort every time you click */
             $('.filters').on('click', 'li', function () {
                 var filterValue = $(this).attr('data-filter');  /* ".uxDesign", ".art", etc. */
-                $grid.isotope({ filter: filterValue, sortBy: 'year', sortAscending: false });
+                $grid.isotope({ filter: filterValue, sortBy: 'year', sortAscending: true });
             });
             });
         </script>
