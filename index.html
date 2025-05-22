@@ -404,7 +404,41 @@
             });
             </script>
 
+        <script>
+            /* wait until every image Isotope cares about is in place */
+            $(window).on('load', function () {
+        
+            /* 2️⃣  Build (or grab) the Isotope instance */
+            var $grid = $('.projects-items').isotope({
+                itemSelector : '.single-item',
+                layoutMode   : 'fitRows',          /* masonry / fitRows – pick whatever you use */
+                /* 3️⃣  Tell Isotope how to read the attribute */
+                getSortData  : {
+                year : '[data-year] parseInt'    /* reads the attribute, converts to number  */
+                },
+                sortBy       : 'year',             /* 4️⃣  default sort = year                */
+                sortAscending: false               /* newest → oldest                         */
+            });
+        
+            /* 5️⃣  keep the filters working AND keep the sort every time you click */
+            $('.filters').on('click', 'li', function () {
+                var filterValue = $(this).attr('data-filter');  /* ".uxDesign", ".art", etc. */
+                $grid.isotope({ filter: filterValue, sortBy: 'year', sortAscending: false });
+            });
+            });
+        </script>
 
+                <script>
+                    // Smooth scrolling for internal links
+                    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                        anchor.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        });
+                    });
+                </script>
     </body>
 </html>
 
